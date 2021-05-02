@@ -1,4 +1,4 @@
-html,
+/* html,
 body {
   padding: 0;
   margin: 0;
@@ -13,4 +13,44 @@ a {
 
 * {
   box-sizing: border-box;
+} */
+
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap');
+
+
+@layer components {
+  .nav-link {
+    @apply text-3xl font-semibold hover:text-gray-500 hover:underline transition-colors duration-500 ease-in-out mb-5;
+  }
 }
+
+#frLine, #sdLine{
+  transition: transform .25s ease-in;
+}
+
+.showNavFr{
+  transform: rotate(45deg) translate(3px,-1px);
+  /* transform-origin: 50% 50%; */
+}
+
+.showNavSd{
+  transform:rotate(-45deg) translate(-15px,-10px);
+  /* transform-origin: 50% 50%; */
+
+}
+
+
+/* #frLine:hover{
+  transform: rotate(45) translate(3,-1);
+}
+
+.navButton:hover #sdLine{
+  transform:rotate(-45) translate(-15,-10)
+} */
+
+
+
